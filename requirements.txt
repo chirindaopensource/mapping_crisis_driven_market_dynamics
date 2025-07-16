@@ -1,0 +1,108 @@
+﻿# ==========================================================================================================================================
+#                                                                                
+#  Requirements.txt for "Mapping Crisis-Driven Market Dynamics: A Transfer Entropy and Kramers-Moyal Approach to Financial Networks"  
+#                                                                                
+#  This requirements file provides a complete, production-grade dependency specification for the       
+#  analytical framework presented in "Mapping Crisis-Driven Market Dynamics: A Transfer Entropy and     
+#  Kramers-Moyal Approach to Financial Networks".         
+#                                                                                
+#  Dependencies are organized by functional category and include version constraints
+#  that ensure numerical stability, API compatibility, and reproducible results.
+#                                                                                
+#  Key Requirements:
+#   - Core numerical computation and linear algebra operations
+#   - Time series econometric analysis and stationarity testing
+#   - Information theory computations (entropy, mutual information, transfer entropy)
+#   - Network analysis and graph theory operations
+#   - Advanced statistical modeling and hypothesis testing
+#   - High-performance data visualization and network plotting
+#   - Financial data API integration and time series alignment
+#                                                                                
+# ==========================================================================================================================================
+
+# Core Numerical Computing and Linear Algebra
+# NumPy provides fundamental array operations, linear algebra solvers (numpy.linalg.solve, numpy.linalg.inv),
+# and optimized mathematical functions essential for Kramers-Moyal coefficient computation
+numpy>=1.24.0,<2.0.0
+
+# Advanced Data Structures and Time Series Manipulation
+# Pandas enables sophisticated datetime indexing, time series alignment across different trading calendars,
+# and efficient data wrangling for multi-asset financial datasets
+pandas>=2.0.0,<3.0.0
+
+# Statistical Computing and Hypothesis Testing
+# SciPy provides probability distributions, statistical tests, and numerical optimization routines
+# Required for stationarity testing, probability density estimation, and robust numerical methods
+scipy>=1.10.0,<2.0.0
+
+# Econometric Analysis and Time Series Modeling
+# Statsmodels provides Augmented Dickey-Fuller tests for stationarity analysis,
+# ARIMA modeling capabilities, and advanced econometric statistical functions
+statsmodels>=0.14.0,<1.0.0
+
+# Network Analysis and Graph Theory
+# NetworkX enables construction of Transfer Entropy and Kramers-Moyal networks,
+# centrality analysis, and advanced graph-theoretic computations for systemic risk assessment
+networkx>=3.0,<4.0
+
+# Data Visualization and Scientific Plotting
+# Matplotlib provides core plotting functionality including time series visualization,
+# heatmap generation, and network graph rendering with customizable aesthetics
+matplotlib>=3.7.0,<4.0.0
+
+# Advanced Statistical Data Visualization
+# Seaborn enhances matplotlib with sophisticated statistical plotting capabilities,
+# correlation matrices, and publication-quality heatmaps for financial data analysis
+seaborn>=0.12.0,<1.0.0
+
+# Progress Monitoring and Performance Tracking
+# TQDM provides progress bars for computationally intensive sliding window procedures
+# and long-running Transfer Entropy calculations
+tqdm>=4.65.0,<5.0.0
+
+# Financial Data API Integration (Optional but Recommended)
+# YFinance enables programmatic access to historical financial data with proper API rate limiting
+# Required for real-time data ingestion and market data preprocessing
+yfinance>=0.2.0,<1.0.0
+
+# Enhanced Data Input/Output Operations
+# Openpyxl enables reading/writing Excel files containing financial datasets
+# Required for institutional data interchange and report generation
+openpyxl>=3.1.0,<4.0.0
+
+# High-Performance Numerical Computing (Optional but Recommended)
+# Numba provides just-in-time compilation for performance-critical Transfer Entropy computations
+# Significantly accelerates nested loop operations in sliding window procedures
+numba>=0.57.0,<1.0.0
+
+# Advanced Statistical Analysis (Optional but Recommended)
+# Scikit-learn provides machine learning algorithms for pattern recognition in financial networks
+# and cross-validation techniques for model robustness assessment
+scikit-learn>=1.3.0,<2.0.0
+
+# Memory-Efficient Data Structures (Optional but Recommended)
+# PyTables enables efficient storage and retrieval of large financial time series datasets
+# Required for handling high-frequency data and large-scale network analysis
+tables>=3.8.0,<4.0.0
+
+# Parallel Processing and Distributed Computing (Optional but Recommended)
+# Joblib provides parallel processing capabilities for computationally intensive operations
+# Required for multi-core Transfer Entropy calculations and bootstrap procedures
+joblib>=1.3.0,<2.0.0
+
+# Development and Testing Dependencies (Optional)
+# Pytest provides comprehensive testing framework for validation of numerical implementations
+pytest>=7.4.0,<8.0.0
+
+# Jupyter Notebook Support (Optional)
+# IPython and Jupyter provide interactive development environment for financial analysis
+ipython>=8.14.0,<9.0.0
+jupyter>=1.0.0,<2.0.0
+
+# Code Quality and Formatting (Optional)
+# Black provides consistent code formatting for maintainable financial analysis codebases
+black>=23.0.0,<24.0.0
+
+# Type Checking Support (Optional)
+# MyPy provides static type checking for robust financial computation implementations
+mypy>=1.5.0,<2.0.0
